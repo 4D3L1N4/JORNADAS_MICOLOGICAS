@@ -9,3 +9,109 @@ body {
 body h1, h2, h3 {
     font-family: 'Fjalla One', sans-serif
 }
+
+/* Encabezado */
+header {
+    background-color: #4a772f;
+    background-image: url('../img/imagen_decorativa.png');
+    background-size: 50%;
+    background-position: center;
+    color: blanchedalmond;
+    overflow: hidden;
+    position: relative;
+}
+
+header .titulo {
+    float: left;
+    width: 55%;
+    text-align: right;
+}
+
+header .titulo h1 {
+    font-size: 2.8rem;
+    margin-top: 50px;
+}
+
+header .titulo h5 {
+    font-size: 1.3rem;
+    color: #adc4a4;
+    margin: 25px 10px 50px 470px;
+}
+
+header .titulo h5:hover {
+    text-shadow: 0 0 10px burlywood;
+}
+
+header .logo {
+    float: right;
+    width: 42%;
+}
+
+header .logo img {
+    max-width: 40%;
+    margin: 15px 0 10px 0;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #8bb174;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color:#4a772f;
+    border-radius: 5px;
+    color: blanchedalmond;
+}
+
+nav ul li.actual a {
+    border-bottom: 3px solid blanchedalmond;
+    border-radius: 5px;
+    padding-bottom: 2px;
+}
+
+/* Contenido principal */
+main {
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0 , 0 , 0.1);
+}
+
+/* Pie de página */
+footer {
+    background-color: #4a772f;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+}
+
+footer p {
+    margin: 20px 10px;
+}
+
+footer p b {
+    color: blanchedalmond;
+}
