@@ -53,6 +53,11 @@ header {
     margin: 15px 0 10px 0;
 }
 
+.titulo-programacion {
+    text-align: center;
+    margin: 41px 0;
+}
+
 /* Menú de navegación */
 nav {
     background-color: #8bb174;
