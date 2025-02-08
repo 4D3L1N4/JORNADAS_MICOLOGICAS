@@ -4,7 +4,7 @@ body {
     padding: 0;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
-    background-color: #e5e0d3;
+    background-color: #fffaf0;
 } 
 
 h1, h2, h3 {
@@ -36,7 +36,7 @@ header {
 .titulo h5 {
     font-size: 1.3rem;
     color: #adc4a4;
-    margin: 25px 10px 50px 470px;
+    margin: 25px 10px 50px 450px;
 }
 
 .titulo h5:hover {
@@ -119,10 +119,10 @@ section h2 {
     color: #4a772f;
 }
 
-/* Sección 1: Acerca del Evento */
+/* INICIO - Sección 1: Acerca del Evento */
 .acerca-evento {
     background-color: #e5e0d3;
-    color: #4a772f;
+    /* color: #4a772f; */
 }
 
 .tabla-evento {
@@ -138,12 +138,15 @@ section h2 {
 }
 
 .tabla-evento p {
+    background-color: #fffaf0;
+    color: #4a772f;
     margin: 0;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 500;
     vertical-align: top;
-    letter-spacing: 2px;
-    text-align: top;
     line-height: 45px;
+    padding: 30px;
+    border-radius: 5px;
 }
 
 .tabla-evento video {
@@ -153,7 +156,7 @@ section h2 {
     border-radius: 5px;
 }
 
-/* Sección 2: Información Importante */
+/* INICIO - Sección 2: Información Importante */
 .info-importante {
     background-color: #fff;
 }
@@ -200,21 +203,22 @@ section h2 {
     width: 95%;
 }
 
-/* Sección 3: Actividades Destacadas */
+/* INICIO - Sección 3: Actividades Destacadas */
 .actividades-destacadas {
     background-color: #e5e0d3;
 }
 
 .actividades {
+    width: 95%;
     margin: 0 auto;
-    justify-content: center;
+
 }
 
 .actividad {
     width: 20%;
-    float: left;
-    text-align: center;
+    float: left; 
     margin: 25px;
+    text-align: center;
 }
 
 .actividad:hover {
@@ -225,6 +229,7 @@ section h2 {
 }
 
 .actividad img {
+    display: block;
     width: 100%;
     height: 150px;
     border-radius: 5px;
@@ -237,10 +242,88 @@ section h2 {
     padding-bottom: 10px;
 }
 
+/* PROGRAMACIÓN - Tabla del programa */
+.tabla-programa {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #fffaf0;
+}
+
+.tabla-programa th {
+    text-align: center;
+    background-color: #8bb174;
+}
+
+.tabla-programa td.fecha, 
+.tabla-programa td.hora {
+    text-align: center; 
+    font-weight: 600; 
+}
+
+.tabla-programa td {
+    text-align: left;
+}
+
+.tabla-programa th.ponente, 
+.tabla-programa td.ponente {
+    width: 40%; 
+    max-width: 400px; 
+    word-wrap: break-word; 
+}
+
+.tabla-programa th, .tabla-programa td {
+    border: 1px solid #adc4a4;
+    padding: 5px 15px;
+}
+
+.tabla-programa tbody tr:nth-child(even) td.hora,
+.tabla-programa tbody tr:nth-child(even) td.taller {
+    background-color: #8bb1746e;
+}
+
+/* PROGRAMACIÓN - Lista del programa */
+.programa-evento2 {
+    background-color: #e5e0d3;
+    overflow: hidden;
+    position: relative;
+}
+
+.programa-evento2 h3, .programa-evento2 h4 {
+    text-align: center;
+    color: #4a772f;
+}
+
+.lista-evento h4 {
+    text-align: center;
+    color: #4a772f;
+}
+
+#dia1 {
+    float: left;
+    width: 50%;
+}
+
+#dia2 {
+    float: right;
+    width: 50%;
+}
+
+ul .hora {
+    list-style: none;
+    font-weight: 500;
+}
+
+.sublista li {
+    list-style-type: disc;
+    font-weight: 100;
+}
+
+
 /* Pie de página */
 footer {
     background-color: #4a772f;
-    padding: 30px 5px;
+    padding: 25px 5px;
     text-align: center;
     overflow: hidden;
     position: relative;

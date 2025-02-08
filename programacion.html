@@ -35,33 +35,56 @@
                 <table class="tabla-programa">
                     <thead>
                         <tr>
-                            <th>Fecha</th><th>Hora</th><th>Taller</th><th>Ponente</th>
+                            <th scope="col">Fecha</th><th scope="col">Hora</th><th scope="col">Taller</th><th class="ponente" scope="col">Ponente</th>
                         </tr>
                     </thead>
 
                     <tbody>
-                        <tr><td rowspan="9">10/11/2024</td><td>8:30 - 09:00</td><td>Registro de participantes y bienvenida</td>
-                                <td rowspan="5"><dl><dt>Carolina Méndez</dt><dd>Ecóloga y exploradora, especializada en hongos como indicadores de salud ambiental.</dd></dl></td></tr>
-                        <tr><td>09:00 - 09:30</td><td>Introducción al seminario</td></tr>
-                        <tr><td>09:30 - 10:30</td><td>Fundamentos de la Micología</td></tr>
-                        <tr><td>10:30 - 10:45</td><td>Pausa para café</td></tr>
-                        <tr><td>10:45 - 12:15</td><td>Diversidad de Hongos</td></tr>
-                        <tr><td>12:15 - 13:15</td><td>Almuerzo</td><td rowspan="4"><dl><dt>Luis Álvarez</dt><dd>Agricultor y emprendedor en producción sostenible de hongos comestibles.</dd></dl></td></tr>
-                        <tr><td>13:15 - 14:15</td><td>Hongos y sus Aplicaciones Prácticas</td></tr>
-                        <tr><td>14:15 - 14:30</td><td>Pausa para café</td></tr>
-                        <tr><td>14:30 - 16:00</td><td>Taller práctico: Observación de hongos</td></tr>
+                        <!-- Día 1 -->
+                        <tr>
+                            <td class="fecha" rowspan="9">10/11/2024</td>
+                            <td class="hora">8:30 - 09:00</td><td class="taller">Registro de participantes y bienvenida</td>
+                            <td rowspan="5"><dl><dt><b>Carolina Méndez</b></dt><dd>Ecóloga y exploradora, especializada en hongos como indicadores de salud ambiental.</dd></dl></td>
+                        </tr>
 
-                        <tr><td rowspan="9">11/11/2024</td><td>8:30 - 09:00</td><td>Recepción y repaso del día anterior</td>
-                            <td rowspan="5"><dl><dt>Dra. Elena Rojas</dt><dd>Micóloga y profesora universitaria especializada en hongos medicinales</dd></dl></td></tr>
-                        <tr><td>09:00 - 10:30</td><td>Micología Médica</td></tr>
-                        <tr><td>10:30 - 10:45</td><td>Pausa para café</td></tr>
-                        <tr><td>10:45 - 12:15</td><td>Micología Ambiental</td></tr>
-                        <tr><td>12:15 - 13:15</td><td>Almuerzo</td></tr>
-                        <tr><td>13:15 - 14:15</td><td>Avances en el Estudio de Hongos</td>
-                            <td rowspan="4"><dl><dt>Dr. Ricardo Beltrán</dt><dd>Biotecnólogo enfocado en el uso de hongos para crear materiales innovadores.</dd></dl></td></tr>
-                        <tr><td>14:15 - 14:30</td><td>Pausa para café</td></tr>
-                        <tr><td>14:30 - 15:30</td><td>Identificación de hongos comestibles y tóxicos</td></tr>
-                        <tr><td>15:30 - 16:00</td><td>Cierre del seminario</td></tr>
+                        <tr><td class="hora">09:00 - 09:30</td><td class="taller">Introducción al seminario</td></tr>
+
+                        <tr><td class="hora">09:30 - 10:30</td><td class="taller">Fundamentos de la Micología</td></tr>
+
+                        <tr><td class="hora">10:30 - 10:45</td><td class="taller">Pausa para café</td></tr>
+
+                        <tr><td class="hora">10:45 - 12:15</td><td class="taller">Diversidad de Hongos</td></tr>
+
+                        <tr><td class="hora">12:15 - 13:15</td><td class="taller">Almuerzo</td><td rowspan="4"><dl><dt><b>Luis Álvarez</b></dt><dd>Agricultor y emprendedor en producción sostenible de hongos comestibles.</dd></dl></td></tr>
+
+                        <tr><td class="hora">13:15 - 14:15</td><td class="taller">Hongos y sus Aplicaciones Prácticas</td></tr>
+
+                        <tr><td class="hora">14:15 - 14:30</td><td class="taller">Pausa para café</td></tr>
+
+                        <tr><td class="hora">14:30 - 16:00</td><td class="taller">Taller práctico: Observación de hongos</td></tr>
+
+                        <!-- Día 2 -->
+                        <tr>
+                            <td class="fecha"rowspan="9">11/11/2024</td>
+                            <td class="hora">8:30 - 09:00</td><td class="taller">Recepción y repaso del día anterior</td>
+                            <td rowspan="5"><dl><dt><b>Dra. Elena Rojas</b></dt><dd>Micóloga y profesora universitaria especializada en hongos medicinales</dd></dl></td></tr>
+
+                        <tr><td class="hora">09:00 - 10:30</td><td class="taller">Micología Médica</td></tr>
+
+                        <tr><td class="hora">10:30 - 10:45</td><td class="taller">Pausa para café</td></tr>
+
+                        <tr><td class="hora">10:45 - 12:15</td><td class="taller">Micología Ambiental</td></tr>
+
+                        <tr><td class="hora">12:15 - 13:15</td><td class="taller">Almuerzo</td></tr>
+
+                        <tr><td class="hora">13:15 - 14:15</td><td class="taller">Avances en el Estudio de Hongos</td>
+                            <td rowspan="4"><dl><dt><b>Dr. Ricardo Beltrán</b></dt><dd>Biotecnólogo enfocado en el uso de hongos para crear materiales innovadores.</dd></dl></td></tr>
+
+                        <tr><td class="hora">14:15 - 14:30</td><td class="taller">Pausa para café</td></tr>
+
+                        <tr><td class="hora">14:30 - 15:30</td><td class="taller">Identificación de hongos comestibles y tóxicos</td></tr>
+
+                        <tr><td class="hora">15:30 - 16:00</td><td class="taller">Cierre del seminario</td></tr>
                     </tbody>
                 </table>
             </section>
@@ -69,77 +92,81 @@
             <!-- Lista del programa -->
             <section class="programa-evento2">
                 <h2>Programa de las II Jornadas de Micología</h2>
-                <h3>10 y 11 de Noviembre</h3>
+                <h4>10 y 11 de Noviembre</h4>
+
+                <!-- Día 1 -->
                 <div class="lista-evento" id="dia1">
-                    <h4>Día 1: Introducción a la Micología y su Importancia</h4>
-                    <ul><li>08:30 - 09:00 | Registro de participantes y bienvenida</li>
-                        <ul><li>Entrega de materiales y presentación del programa.</li></ul>
+                    <h3>Día 1: Introducción a la Micología y su Importancia</h3>
+                    <ul><li class="hora"><b>08:30 - 09:00 | Registro de participantes y bienvenida</b></li>
+                        <ul class="sublista"><li>Entrega de materiales y presentación del programa.</li></ul>
                     </ul>
 
-                    <ul><li>09:00 - 09:30 | Introducción al seminario</li>
-                        <ul><li>Objetivos generales y contextualización.</li>
+                    <ul><li class="hora"><b>09:00 - 09:30 | Introducción al seminario</b></li>
+                        <ul class="sublista"><li>Objetivos generales y contextualización.</li>
                         <li>Importancia de la micología en la ciencia, medicina y ecología.</li></ul>
                     </ul>
 
-                    <ul><li>09:30 - 10:30 | Sesión 1: Fundamentos de Micología</li>
-                        <ul><li>Historia y evolución del estudio de los hongos.</li>
+                    <ul><li class="hora"><b>09:30 - 10:30 | Sesión 1: Fundamentos de Micología</b></li>
+                        <ul class="sublista"><li>Historia y evolución del estudio de los hongos.</li>
                         <li>Clasificación básica: grupos principales y características distintivas.</li></ul>
                     </ul>
 
-                    <ul><li>10:30 - 10:45 | Pausa para café</li></ul>
+                    <ul><li class="hora"><b>10:30 - 10:45 | Pausa para café</b></li></ul>
 
-                    <ul><li>10:45 - 12:15 | Sesión 2: Diversidad de Hongos</li>
-                        <ul><li>Principales tipos de hongos: maacroscópicos y microscópicos.</li>
+                    <ul><li class="hora"><b>10:45 - 12:15 | Sesión 2: Diversidad de Hongos</b></li>
+                        <ul class="sublista"><li>Principales tipos de hongos: maacroscópicos y microscópicos.</li>
                         <li>Hábitats y roles ecológicos: descomponedores, simbiontes y parásitos.</li>
                         <li>Ejemplos de hongos comestibles, medicinales y tóxicos.</li></ul>
                     </ul>
 
-                    <ul><li>12:15 - 13:15 | Almuerzo</li></ul>
-                        <ul><li>13:15 - 14:15 | Sesión 3: Hongos y sus Aplicaciones Prácticas</li>
-                        <ul><li>Uso en la industria alimentaria (levaduras, fermentación).</li>
+                    <ul><li class="hora"><b>12:15 - 13:15 | Almuerzo</b></li></ul>
+
+                    <ul><li class="hora"><b>13:15 - 14:15 | Sesión 3: Hongos y sus Aplicaciones Prácticas</b></li>
+                        <ul class="sublista"><li>Uso en la industria alimentaria (levaduras, fermentación).</li>
                         <li>Aplicaciones médicas: producción de antibióticos y otros compuestos bioactivos.</li></ul>
                     </ul>
 
-                    <ul><li>14:15 - 14:30 | Pausa para café</li></ul>
+                    <ul><li class="hora"><b>14:15 - 14:30 | Pausa para café</b></li></ul>
 
-                    <ul><li>14:30 - 16:00 | Taller práctico: Observación de hongos</li>
-                        <ul><li>Uso en la industria alimentaria (levaduras, fermentación).</li>
+                    <ul><li class="hora"><b>14:30 - 16:00 | Taller práctico: Observación de hongos</b></li>
+                        <ul class="sublista"><li>Uso en la industria alimentaria (levaduras, fermentación).</li>
                         <li>Aplicaciones médicas: producción de antibióticos y otros compuestos bioactivos.</li></ul>
                     </ul>        
                 </div>
 
+                <!-- Día 2 -->
                 <div class="lista-evento" id="dia2">
-                    <h4>Día 2: Micología Aplicada y Avances Actuales</h4>
-                    <ul><li>08:30 - 09:00 | Recepción y repaso del día anterior</li></ul>
+                    <h3>Día 2: Micología Aplicada y Avances Actuales</h3>
+                    <ul><li class="hora"><b>08:30 - 09:00 | Recepción y repaso del día anterior</b></li></ul>
 
-                    <ul><li>09:00 - 10:30 | Sesión 5: Micología Médica</li>
-                        <ul><li>Patógenos humanos: infecciones micóticas comunes y emergentes.</li>
+                    <ul><li class="hora"><b>09:00 - 10:30 | Sesión 5: Micología Médica</b></li>
+                        <ul class="sublista"><li>Patógenos humanos: infecciones micóticas comunes y emergentes.</li>
                         <li>Hongos oportunistas y su impacto en la salud pública.</li></ul>
                     </ul>
 
-                    <ul><li>10:30 - 10:45 | Pausa para café</li></ul>
+                    <ul><li class="hora"><b>10:30 - 10:45 | Pausa para café</b></li></ul>
 
-                    <ul><li>10:45 - 12:15 | Sesión 6: Micología Ambiental</li>
-                        <ul><li>El papel de los hongos en la bioremediación.</li>
+                    <ul><li class="hora"><b>10:45 - 12:15 | Sesión 6: Micología Ambiental</b></li>
+                        <ul class="sublista"><li>El papel de los hongos en la bioremediación.</li>
                         <li>Hongos en la agricultura: beneficios y control de plagas.</li></ul>
                     </ul>
 
-                    <ul><li>12:15 - 13:15 | Almuerzo</li></ul>
+                    <ul><li class="hora"><b>12:15 - 13:15 | Almuerzo</b></li></ul>
 
-                    <ul><li>13:15 - 14:15 | Sesión 7: Avances en el Estudio de Hongos</li>
-                        <ul><li>Tecnología aplicada: genómica y biotecnología en micología.</li>
+                    <ul><li class="hora"><b>13:15 - 14:15 | Sesión 7: Avances en el Estudio de Hongos</b></li>
+                        <ul class="sublista"><li>Tecnología aplicada: genómica y biotecnología en micología.</li>
                         <li>Descubrimientos recientes y tendencias de investigación.</li></ul>
                     </ul>
 
-                    <ul><li>14:15 - 14:30 | Pausa para café</li></ul>
+                    <ul><li class="hora"><b>14:15 - 14:30 | Pausa para café</b></li></ul>
 
-                    <ul><li>14:30 - 16:00 | Taller práctico: Identificación de hongos comestibles y tóxicos</li>
-                        <ul><li>Métodos para diferenciar especies.</li>
+                    <ul><li class="hora"><b>14:30 - 16:00 | Taller práctico: Identificación de hongos comestibles y tóxicos</b></li>
+                        <ul class="sublista"><li>Métodos para diferenciar especies.</li>
                         <li>Precauciones al recolectar hongos silvestres.</li></ul>
                     </ul>
 
-                    <ul><li>15:30 - 16:00 | Cierre al seminario</li>
-                        <ul><li>Resolución de dudas, entrega de certificados y despedida.</li></ul>
+                    <ul><li class="hora"><b>15:30 - 16:00 | Cierre al seminario</b></li>
+                        <ul class="sublista"><li>Resolución de dudas, entrega de certificados y despedida.</li></ul>
                     </ul>
                 </div>
             </section>
