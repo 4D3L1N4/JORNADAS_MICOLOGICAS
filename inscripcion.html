@@ -31,7 +31,80 @@
 
         <!-- Contenido principal -->
         <main>
-
+            <section id="registro">
+                <h2>Registro a las II Jornadas de Micología</h2>
+    
+                    <form action="#" method="post">
+                        <!-- Datos personales -->
+                        <fieldset>
+                            <legend>Datos personales</legend>
+    
+                            <label for="dni">DNI:</label>
+                            <input type="text" id="dni" placeholder="12345678Z" pattern="^[0-9]{8}[A-Z]$" title="Por favor, introduce un DNI válido." required>
+    
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{10,128}$" title="Por favor, introduce un DNI válido." required>
+    
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" title="Por favor, introduce un correo electrónico válido" required>
+    
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" pattern="^\+?[0-9]{1,3}?\s?[0-9]{9,15}$" title="Introduce un teléfono válido." required>
+                        </fieldset>
+    
+                         <!-- Intereses en las jornadas --> 
+                        <fieldset>
+                            <legend>Intereses en las jornadas</legend>
+    
+                            <label>¿Qué talleres te interesan?</label>
+    
+                            <div>
+                                <input type="checkbox" id="diversidad" name="talleres" value="diversidad">
+                                <label for="diversidad">Diversidad de hongos</label>
+    
+                                <input type="checkbox" id="aplicaciones" name="talleres" value="aplicaciones">
+                                <label for="aplicaciones">Hongos y sus aplicaciones prácticas</label>
+    
+                                <input type="checkbox" id="observacion" name="talleres" value="observacion">
+                                <label for="observacion">Taller práctico: Observación de hongos</label>
+    
+                                <input type="checkbox" id="medicina" name="talleres" value="medicina">
+                                <label for="medicina">Micología médica</label>
+    
+                                <input type="checkbox" id="ambiental" name="talleres" value="ambiental">
+                                <label for="ambiental">Micología ambiental</label>
+    
+                                <input type="checkbox" id="avances" name="talleres" value="avances">
+                                <label for="observacion">Avances en el estudio de hongos</label>
+    
+                                <input type="checkbox" id="identificacion" name="talleres" value="identificacion">
+                                <label for="identificacion">Identificación de hongos comestibles y tóxicos</label>
+                            </div>
+    
+                             <!-- Motivo de participación -->
+                              <label for="motivo">Motivo de participación</label>
+                              <textarea name="motivo" id="motivo" rows="5" placeholder="" required></textarea>
+    
+                            <!-- Fechas de asistencia -->
+                             <label for="fechas">Fechas de asistencia</label>
+                             <select name="fechas" id="fechas" required>
+                                <option value="" disabled selected>Elige una fecha</option>
+                                <option value="10">10 de noviembre</option>
+                                <option value="11">11 de noviembre</option>
+                                <option value="ambos">Ambas fechas</option>
+                             </select>
+    
+                            <!-- Condiciones de participación -->
+                             <div>
+                                <input type="checkbox" id="condiciones" name="condiciones" required>
+                                <label for="condiciones">He leído y acepto las condiciones de participación</label>
+                             </div>
+                        </fieldset>
+    
+                        <!-- Botón de envío -->
+                        <button type="submit">Enviar inscripción</button>
+                    </form>
+            </section>
         </main>
 
         <!-- Pie de página -->
