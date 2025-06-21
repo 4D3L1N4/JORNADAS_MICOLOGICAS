@@ -122,7 +122,6 @@ section h2 {
 /* INICIO - Sección 1: Acerca del Evento */
 .acerca-evento {
     background-color: #e5e0d3;
-    /* color: #4a772f; */
 }
 
 .tabla-evento {
@@ -319,6 +318,133 @@ ul .hora {
     font-weight: 100;
 }
 
+/* FORMULARIO - Datos personales */
+.registro {
+    background-color: #e5e0d3;
+}
+
+.registro h3 {
+    text-align: center;
+    color: #4a772f;
+}
+
+fieldset {
+    border: none;
+}
+
+.datos-personales {
+    display: block;
+}
+
+.datos-personales label {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.datos-personales input {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* FORMULARIO - Intereses en las jornadas */
+.intereses-jornadas {
+    display: block;
+    font-weight: bold;
+}
+
+.seleccion label {
+    display: block;
+    margin: 10px 0;
+}
+
+.seleccion input {
+    accent-color: #4a772f;
+}
+
+.motivo-participacion {
+    display: block;
+    margin: 25px 0;
+}
+
+.motivo-participacion label {
+    display: block;
+}
+
+.motivo-participacion textarea {
+    display: block;
+    margin: 8px 0px;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+}
+
+.fechas-asistencia {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.fechas-asistencia label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.fechas-asistencia select {
+    border-radius: 5px;
+    background-color: white;
+}
+
+.condiciones-participacion input {
+    accent-color: #4a772f;
+}
+
+input, textarea, select {
+    border: 2px solid #fffaf0;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #ccc;
+    outline: none; 
+}
+
+input:valid, 
+textarea:valid, 
+select:valid {
+    border: 2px solid #4caf50; 
+}
+
+input:invalid:user-invalid, 
+textarea:invalid:user-invalid
+select:invalid:user-invalid {
+    border-color: #FF6347;
+}
+
+.requerido {
+    color: red;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    background-color: #4a772f;
+    color: white;
+    border: none;
+    font-size: medium;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    transition: background-color 0.3s;
+    background-color: #8bb174;
+}
 
 /* Pie de página */
 footer {
